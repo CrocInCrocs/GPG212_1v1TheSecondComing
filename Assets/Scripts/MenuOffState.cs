@@ -13,10 +13,12 @@ public class MenuOffState : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
+        //this section turns off the pause screen and resumes the music within the game 
         menuText.enabled = false;
-        playerMovement1.enabled = true; 
-        playerMovement2.enabled = true;
         gameSoundtrack.Play();
+        //this turns the players controls back on 
+        playerMovement1.enabled = true;
+        playerMovement2.enabled = true;
         Debug.Log("Menu off");
     }
 
@@ -29,6 +31,7 @@ public class MenuOffState : MonoBehaviour
     private void OnDisable()
     {
         Debug.Log("Menu turning on");
+        //this pauses the game music so the menu music can play without conflict
         gameSoundtrack.Pause();
     }
 }
