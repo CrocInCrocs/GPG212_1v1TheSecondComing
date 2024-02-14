@@ -19,19 +19,19 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(forwardKey))
+        if(Input.GetKey(forwardKey))
         {
             transform.Translate(Vector3.forward * speed);
         }
-         if(Input.GetKeyDown(backKey))
+         if(Input.GetKey(backKey))
         {
             transform.Translate(Vector3.forward * -speed);
         }
-         if(Input.GetKeyDown(rightKey))
+         if(Input.GetKey(rightKey))
         {
             transform.Translate(Vector3.right * speed);
         }
-         if(Input.GetKeyDown(leftKey))
+         if(Input.GetKey(leftKey))
         {
             transform.Translate(Vector3.left * speed);
         }
