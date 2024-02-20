@@ -14,9 +14,9 @@ public class PlayerManager : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<CollectableTest>())
+        if (collision.gameObject.GetComponent<Potato>())
         {
-            collision.gameObject.GetComponent<CollectableTest>().IPickedUp();
+            collision.gameObject.GetComponent<Potato>().IPickedUp();
             Debug.Log("Trying to collect");
         }
     }
