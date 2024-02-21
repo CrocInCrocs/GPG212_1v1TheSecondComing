@@ -12,21 +12,27 @@ public class Spawner : MonoBehaviour
     public delegate void NoParameters();
 
     public event NoParameters PickedUp;
-    
-    // Start is called before the first frame update
-   
-    
 
-    // Update is called once per frame
+    public int plantToSpawn;
+    // Start is called before the first frame update
+   void OnEnable()
+   {
+       PlantSpawner();
+       
+   }
+
+
+   // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-    void PlantSpawner(int plantToSpawn)
+    public void PlantSpawner()
     {
-        plantToSpawn = Random.Range(0, 4);
+        plantToSpawn = Random.Range(0, 2);
+        Debug.Log("${plantToSpawn}"); 
 
-        Instantiate(plants[plantToSpawn], new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(plants[plantToSpawn],transform.position,Quaternion.identity, gameObject.transform.parent);
     }
 }
