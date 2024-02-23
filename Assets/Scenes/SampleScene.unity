@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 437508559}
   - component: {fileID: 437508565}
   - component: {fileID: 437508564}
+  - component: {fileID: 437508566}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -162,6 +163,8 @@ MonoBehaviour:
   rightKey: 100
   leftKey: 97
   speed: 0.03
+  rb: {fileID: 437508564}
+  playerController: {fileID: 437508566}
 --- !u!65 &437508560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -285,6 +288,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8daed67b9864b3b40ad1d2a2b6b030c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &437508566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437508558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664178d2df41de946977d273ab328a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!43 &468367848
@@ -1582,6 +1597,8 @@ MonoBehaviour:
   rightKey: 275
   leftKey: 276
   speed: 0.03
+  rb: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!65 &1569825559
 BoxCollider:
   m_ObjectHideFlags: 0

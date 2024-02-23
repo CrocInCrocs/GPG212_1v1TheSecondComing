@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     public void PlantSpawner()
     {
         plantToSpawn = Random.Range(0, 2);
-        Debug.Log("${plantToSpawn}"); 
+        Debug.Log($"{plantToSpawn}"); 
 
         Instantiate(plants[plantToSpawn],transform.position,Quaternion.identity, gameObject.transform.parent);
     }
