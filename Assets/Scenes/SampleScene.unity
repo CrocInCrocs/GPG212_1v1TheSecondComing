@@ -484,7 +484,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1d415ceb1a37c49842a7c5a737764b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plants: []
+  plants:
+  - {fileID: 8795667448096205154, guid: 9558bf5d821b5fb4c9a8a3968cdbbabd, type: 3}
+  - {fileID: 1563190815497535970, guid: 3b08230ed9f27804fa5537d439ccb0dc, type: 3}
+  plantToSpawn: 0
 --- !u!64 &482188695
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1091,7 +1094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1d415ceb1a37c49842a7c5a737764b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plants: []
+  plants:
+  - {fileID: 8795667448096205154, guid: 9558bf5d821b5fb4c9a8a3968cdbbabd, type: 3}
+  - {fileID: 1563190815497535970, guid: 3b08230ed9f27804fa5537d439ccb0dc, type: 3}
+  plantToSpawn: 0
 --- !u!64 &1237297832
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1447,7 +1453,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1d415ceb1a37c49842a7c5a737764b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plants: []
+  plants:
+  - {fileID: 8795667448096205154, guid: 9558bf5d821b5fb4c9a8a3968cdbbabd, type: 3}
+  - {fileID: 1563190815497535970, guid: 3b08230ed9f27804fa5537d439ccb0dc, type: 3}
+  plantToSpawn: 0
 --- !u!64 &1539671313
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2637,7 +2646,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1d415ceb1a37c49842a7c5a737764b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plants: []
+  plants:
+  - {fileID: 8795667448096205154, guid: 9558bf5d821b5fb4c9a8a3968cdbbabd, type: 3}
+  - {fileID: 1563190815497535970, guid: 3b08230ed9f27804fa5537d439ccb0dc, type: 3}
+  plantToSpawn: 0
 --- !u!64 &2100433069
 MeshCollider:
   m_ObjectHideFlags: 0
