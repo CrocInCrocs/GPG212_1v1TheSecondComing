@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class MenuOffState : MonoBehaviour
+public class MenuOffState : StateBase
 {
     public TextMeshProUGUI menuText;
     public AudioSource gameSoundtrack;
@@ -35,3 +35,7 @@ public class MenuOffState : MonoBehaviour
         gameSoundtrack.Pause();
     }
 }
+
+
+
+

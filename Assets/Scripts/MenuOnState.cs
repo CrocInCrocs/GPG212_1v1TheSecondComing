@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class MenuOnState : MonoBehaviour
+public class MenuOnState : StateBase
 {
     //public AudioClip menuMusic;
     public AudioSource menuMusic;

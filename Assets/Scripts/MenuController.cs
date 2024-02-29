@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
-    public MonoBehaviour menuOn;
+    public StateBase menuOn;
 
-    public MonoBehaviour menuOff;
+    public StateBase menuOff;
 
     public bool menuEnabled;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         menuEnabled = true;
     }

@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class StateManager : MonoBehaviour
 {
-    public MonoBehaviour startingState;
-    public MonoBehaviour currentState;
+    public StateBase startingState;
+    public StateBase currentState;
     
     // Start is called before the first frame update
-    private void Start()
+    private void OnEnable()
     {
         StateChange(startingState);
     }
 
-    public void StateChange(MonoBehaviour newState)
+    public void StateChange(StateBase newState)
     {
         if (newState == currentState)
         {
@@ -23,7 +23,8 @@ public class StateManager : MonoBehaviour
 
         if (currentState != null)
         {
-            currentState.enabled = false; 
+            currentState.Exit();
+            //currentState.enabled = false; 
         }
 
         newState.enabled = true;
@@ -31,9 +32,5 @@ public class StateManager : MonoBehaviour
         currentState = newState;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
