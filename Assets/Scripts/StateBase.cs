@@ -7,6 +7,7 @@ public class StateBase : MonoBehaviour
    public virtual void Enter()
    {
       Debug.Log(GetType().Name + "Enabled");
+      
    }
 
    protected virtual void Execute()

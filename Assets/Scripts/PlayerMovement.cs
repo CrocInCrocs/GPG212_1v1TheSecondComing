@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 1.0f;
     public Rigidbody rb;
 
-    [FormerlySerializedAs("controller")] public PlayerController playerController;
+    public PlayerController playerController;
     // Start is called before the first frame update
     private void OnEnable()
     {
