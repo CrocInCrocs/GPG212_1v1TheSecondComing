@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,8 +137,8 @@ GameObject:
   - component: {fileID: 437508560}
   - component: {fileID: 437508559}
   - component: {fileID: 437508565}
-  - component: {fileID: 437508564}
   - component: {fileID: 437508566}
+  - component: {fileID: 437508564}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -158,13 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d694b97cbcd91cf44ab7c8b43ce9a651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardKey: 119
-  backKey: 115
-  rightKey: 100
-  leftKey: 97
-  speed: 0.03
+  speed: 100
   rb: {fileID: 437508564}
   playerController: {fileID: 437508566}
+  movement: {x: 0, y: 0}
 --- !u!65 &437508560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -274,7 +271,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1267,7 +1264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1569825558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1280,13 +1277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d694b97cbcd91cf44ab7c8b43ce9a651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardKey: 273
-  backKey: 274
-  rightKey: 275
-  leftKey: 276
   speed: 0.03
   rb: {fileID: 0}
   playerController: {fileID: 0}
+  movement: {x: 0, y: 0}
 --- !u!65 &1569825559
 BoxCollider:
   m_ObjectHideFlags: 0

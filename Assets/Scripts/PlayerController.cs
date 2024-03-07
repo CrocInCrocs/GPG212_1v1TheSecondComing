@@ -33,12 +33,6 @@ public class PlayerController : MonoBehaviour
         InputGot?.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnDisable()
     {
         _controllerInputs.InGame.PlayerMovement.performed -= PlayerMovementOnperformed;
