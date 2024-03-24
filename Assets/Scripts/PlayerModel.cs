@@ -16,7 +16,7 @@ public class PlayerModel : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Potato>())
         {
-            collision.gameObject.GetComponent<Potato>().IPickedUp();
+            collision.gameObject.GetComponent<ICollectable>().IPickedUp();
             Debug.Log("Trying to collect");
         }
     }

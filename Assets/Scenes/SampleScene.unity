@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d694b97cbcd91cf44ab7c8b43ce9a651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 1000
   rb: {fileID: 437508564}
   playerController: {fileID: 437508566}
   movement: {x: 0, y: 0}
