@@ -13,9 +13,16 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 movement;
     // Start is called before the first frame update
-    private void OnEnable()
+    public void OnEnable()
     {
-       // playerController.InputGot += Movement;
+        playerController.InputGot += Movement();
+
+    }
+
+    public PlayerController.NoParameters Movement()
+    {
+        FixedUpdate();
+        return null;
     }
 
     // Update is called once per frame
@@ -24,11 +31,9 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(movement.x * speed, 0f, movement.y * speed); 
     }
 
-   
-
     public void OnDisable()
     {
-        //playerController.InputGot -= Movement;
+        playerController.InputGot -= Movement();
     }
 }
 /*public KeyCode forwardKey;
