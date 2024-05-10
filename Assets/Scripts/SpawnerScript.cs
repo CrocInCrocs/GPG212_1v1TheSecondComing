@@ -8,10 +8,8 @@ using Random = UnityEngine.Random;
 public class Spawner : MonoBehaviour
 {
     public List<GameObject> plants;
-    
     public delegate void NoParameters();
-
-    public event NoParameters PickedUp;
+    public event NoParameters Spawned;
 
     public int plantToSpawn;
     // Start is called before the first frame update
@@ -34,5 +32,6 @@ public class Spawner : MonoBehaviour
         Debug.Log($"{plantToSpawn}"); 
 
         Instantiate(plants[plantToSpawn],transform.position,Quaternion.identity, gameObject.transform.parent);
+        Spawned?.Invoke();
     }
 }

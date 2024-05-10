@@ -23,7 +23,6 @@ public class StateManager : MonoBehaviour
 
         if (currentState != null)
         {
-            //currentState.Exit();
             currentState.enabled = false; 
         }
 

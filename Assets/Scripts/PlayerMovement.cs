@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public void OnEnable()
     {
         playerController.InputGot += Movement();
-
     }
 
     public PlayerController.NoParameters Movement()

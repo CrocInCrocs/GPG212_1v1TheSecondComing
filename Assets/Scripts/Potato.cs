@@ -8,7 +8,14 @@ public class Potato : MonoBehaviour, ICollectable
 {
 
     public int cropValue;
+    public Spawner spawner;
     private void OnEnable()
+    {
+        spawner.Spawned += SpawnerOnSpawned;
+      
+    }
+
+    private void SpawnerOnSpawned()
     {
         //Sets size and value for the crop on spawn
         gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
@@ -16,7 +23,7 @@ public class Potato : MonoBehaviour, ICollectable
         //Starts the continuous growth for the crop
         StartCoroutine(CropGrow());
     }
-    
+
     public IEnumerator CropGrow()
     {
         while(true)
@@ -32,5 +39,11 @@ public class Potato : MonoBehaviour, ICollectable
     {
         Destroy(gameObject);
         Debug.Log("Being collected");
+        spawner.PlantSpawner();
+    }
+
+    private void OnDisable()
+    {
+        spawner.Spawned -= SpawnerOnSpawned;
     }
 }
