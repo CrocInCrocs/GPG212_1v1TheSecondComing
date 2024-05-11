@@ -9,8 +9,10 @@ public class Potato : MonoBehaviour, ICollectable
 
     public int cropValue;
     public Spawner spawner;
+    public PlayerModel player;
     private void OnEnable()
     {
+        spawner = new Spawner();
         spawner.Spawned += SpawnerOnSpawned;
       
     }
@@ -37,9 +39,11 @@ public class Potato : MonoBehaviour, ICollectable
 
     public void IPickedUp()
     {
+        player.playerScore =+ cropValue;
         Destroy(gameObject);
         Debug.Log("Being collected");
         spawner.PlantSpawner();
+        
     }
 
     private void OnDisable()

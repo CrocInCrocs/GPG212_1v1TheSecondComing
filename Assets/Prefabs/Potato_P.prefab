@@ -120,3 +120,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95938ae51f7573245bf1b9a9259ddf16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropValue: 0
+  spawner: {fileID: 0}
